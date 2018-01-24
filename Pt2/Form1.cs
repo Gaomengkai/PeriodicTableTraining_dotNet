@@ -39,6 +39,7 @@ namespace Pt2
 
         public void Refresh0()
         {
+            //TODO : 刷新界面，填充新元素
             Entered.Text = null;
             Random random = new Random();
             int min = Convert.ToInt32(Min.Text);
@@ -113,12 +114,6 @@ namespace Pt2
         private void Send_Click(object sender, EventArgs e)
         {
             if (Int32.TryParse(Entered.Text, out int n))
-            {
-            }
-            else
-            {
-                Entered.Text = null;
-            }
             Judge0(n);
         }
     }
