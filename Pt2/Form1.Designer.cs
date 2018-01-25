@@ -105,7 +105,7 @@
             this.radioButton2.Size = new System.Drawing.Size(159, 22);
             this.radioButton2.TabIndex = 5;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "根据序号写名称";
+            this.radioButton2.Text = "根据序号写符号";
             this.radioButton2.UseVisualStyleBackColor = true;
             this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 

@@ -58,6 +58,7 @@ namespace Pt2
                     stmp = name;
                     break;
                 case 2:
+                    stmp = Convert.ToString(rd);
                     break;
                 default:
                     break;
@@ -113,9 +114,37 @@ namespace Pt2
 
         private void Send_Click(object sender, EventArgs e)
         {
-            if (Int32.TryParse(Entered.Text, out int n))
-            Judge0(n);
+            String s = Entered.Text;
+            if (s[0] < 'A')
+            {
+                Judge0(Convert.ToInt32(s));
+            }
+            else
+            {
+                Judge1(s);
+            }
         }
+        private void Judge1(String s)
+        {
+            if (s == Libraries.numToSign[rd])
+            {
+                r++;
+                Tip.Text = "回答正确";
+                Tip.ForeColor = Color.Lime;
+                Yes.Text = rr + Convert.ToString(r);
+            }
+            else
+            {
+                w++;
+                Tip.Text = "回答错误，正确答案：" + Libraries.numToSign[rd];
+                Tip.ForeColor = Color.OrangeRed;
+                Wro.Text = ww + Convert.ToString(w);
+            }
+            Refresh0();
+        }
+    }
+        
+
     }
         
 }
