@@ -142,11 +142,7 @@ namespace Pt2
             }
             Refresh0();
         }
-    }
-        
-
-    }
-        
+    }        
 }
 
 
