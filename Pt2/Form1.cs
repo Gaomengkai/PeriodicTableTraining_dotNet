@@ -78,34 +78,24 @@ namespace Pt2
         {
             if (radioButton3.Checked)
             {
-                choice = 3;
+                RBC(3);
             }
-            isFirst = true;
-            StopTime();
-            Refresh0();
-
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton1.Checked)
             {
-                choice = 1;
+                RBC(1);
             }
-            isFirst = true;
-            StopTime();
-            Refresh0();
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton2.Checked)
             {
-                choice = 2;
+                RBC(2);
             }
-            isFirst = true;
-            StopTime();
-            Refresh0();
         }
 
         public void Judge0(int innn)
@@ -248,8 +238,13 @@ namespace Pt2
             }
         }
 
+        private void RBC(int chose)
+        {
+            choice = chose;
+            isFirst = true;
+            StopTime();
+            Refresh0();
+        }
 
     }        
 }
-
-

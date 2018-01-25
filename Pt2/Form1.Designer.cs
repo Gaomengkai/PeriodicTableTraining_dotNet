@@ -211,7 +211,7 @@
             this.Controls.Add(this.STWC);
             this.Controls.Add(this.Show);
             this.Name = "Form1";
-            this.Text = "元素周期表问答 Alpha9";
+            this.Text = "元素周期表问答 Alpha10";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
