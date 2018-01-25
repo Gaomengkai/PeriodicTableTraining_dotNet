@@ -22,7 +22,9 @@ namespace Pt2
         String tt = "0:0:0.00";
         Stopwatch sw;
         TimeSpan ts;
+        TimeSpan Last;
         bool isFirst = false;
+        TimeSpan empty = new TimeSpan(0, 0, 0, 0, 0);
 
         public Form1()
         {
@@ -79,7 +81,7 @@ namespace Pt2
                 choice = 3;
             }
             isFirst = true;
-            ResetTime();
+            StopTime();
             Refresh0();
 
         }
@@ -91,7 +93,7 @@ namespace Pt2
                 choice = 1;
             }
             isFirst = true;
-            ResetTime();
+            StopTime();
             Refresh0();
         }
 
@@ -102,7 +104,7 @@ namespace Pt2
                 choice = 2;
             }
             isFirst = true;
-            ResetTime();
+            StopTime();
             Refresh0();
         }
 
@@ -143,6 +145,10 @@ namespace Pt2
                 DidNotAnswer();
             }
             isFirst = false;
+            Last = ReadTime();
+            if (Last.Equals(empty)){
+                isFirst = true;
+            }
         }
 
         private void DidNotAnswer()
@@ -208,11 +214,38 @@ namespace Pt2
             timer1.Start();
         }
 
+        private void Stop_Click(object sender, EventArgs e)
+        {
+            StopTime();
+        }
+
         private void ResetTime()
         {
             timer1.Stop();
+            sw.Stop();
             STWC.Text = tt;
 
+        }
+
+        private void StopTime()
+        {
+            timer1.Stop();
+            sw.Stop();
+            STWC.Text = String.Format("{0}:{1}:{2}.{3}",
+                Last.Hours, Last.Minutes, Last.Seconds, Last.Milliseconds / 10);
+            isFirst = true;
+        }
+
+        private TimeSpan ReadTime()
+        {
+            if (sw != null)
+            {
+                return sw.Elapsed;
+            }
+            else
+            {
+                return empty;
+            }
         }
 
 

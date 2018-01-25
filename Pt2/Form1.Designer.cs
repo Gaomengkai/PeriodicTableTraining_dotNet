@@ -62,9 +62,9 @@
             this.STWC.Font = new System.Drawing.Font("SimSun", 20F);
             this.STWC.Location = new System.Drawing.Point(501, 45);
             this.STWC.Name = "STWC";
-            this.STWC.Size = new System.Drawing.Size(177, 40);
+            this.STWC.Size = new System.Drawing.Size(157, 40);
             this.STWC.TabIndex = 1;
-            this.STWC.Text = "0:0:0.00";
+            this.STWC.Text = "0:0:0.0";
             // 
             // Entered
             // 
@@ -136,6 +136,7 @@
             this.Stop.TabIndex = 7;
             this.Stop.Text = "停";
             this.Stop.UseVisualStyleBackColor = true;
+            this.Stop.Click += new System.EventHandler(this.Stop_Click);
             // 
             // Min
             // 
@@ -210,7 +211,7 @@
             this.Controls.Add(this.STWC);
             this.Controls.Add(this.Show);
             this.Name = "Form1";
-            this.Text = "元素周期表问答 Alpha4";
+            this.Text = "元素周期表问答 Alpha9";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -219,7 +220,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label Show;
+        private new System.Windows.Forms.Label Show;
         private System.Windows.Forms.Label STWC;
         private System.Windows.Forms.TextBox Entered;
         private System.Windows.Forms.Button Send;
