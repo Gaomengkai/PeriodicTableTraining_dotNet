@@ -13,10 +13,11 @@ namespace Pt2
 {
     public partial class Form1 : Form
     {
-        //TODO : Initialize ALL the global variables
+        //Initialize ALL the global variables
         int choice = 3;
         int rd;
         int w = 0, r = 0, d = 0;
+        double a;
         String rr = "正确：";
         String ww = "错误：";
         String dd = "未回答：";
@@ -26,6 +27,7 @@ namespace Pt2
         TimeSpan Last;
         bool isFirst = false;
         TimeSpan empty = new TimeSpan(0, 0, 0, 0, 0);
+        String aa = null;
 
         public Form1()
         {
@@ -39,7 +41,8 @@ namespace Pt2
 
         public void NewMethod12()
         {
-            //TODO : First running initialization
+            //First running initialization
+            aa = Anyli.Text;
             this.AcceptButton = Send;
             Min.Text = "1";
             Max.Text = "20";
@@ -49,7 +52,7 @@ namespace Pt2
 
         public void Refresh0()
         {
-            //TODO : Refresh all the elements and to fill the Labels
+            //Refresh all the elements and to fill the Labels
             Entered.Text = null;
             Random random = new Random();           //We need random
             int min = Convert.ToInt32(Min.Text);    //Dafault is 1
@@ -103,7 +106,7 @@ namespace Pt2
 
         public void Judge0(int innn)
         {
-            //TODO : Judge the number the user inputed
+            //Judge the number the user inputed
             if (innn == rd)
             {
                 r++;                        //Right number plus 1 itself
@@ -123,7 +126,7 @@ namespace Pt2
 
         private void Send_Click(object sender, EventArgs e)
         {
-            //TODO : Send the content which the user inputed to our program
+            //Send the content which the user inputed to our program
             String s = Entered.Text;        //We need the type of String
             if (s != "")                    //Judge whether the user has inputed data or not
             {
@@ -142,6 +145,8 @@ namespace Pt2
             }
             isFirst = false;                    //The user lost the FIRST //Hahahahahaha
             Last = ReadTime();                  //Let's get the time when the user inputed data
+            a = (double)r * 100 / (r + w);
+            Anyli.Text = aa + a.ToString("0.00") + "%";
             if (Last.Equals(empty))
             {
                 isFirst = true;                 //But this time stwc hasn't begun working!
@@ -150,7 +155,7 @@ namespace Pt2
 
         private void DidNotAnswer()
         {
-            //TODO : We are discussing why didn't the user input anything...
+            //We are discussing why didn't the user input anything...
             if (choice == 2)
             {
                 //We wanna the user input something like String
@@ -172,7 +177,7 @@ namespace Pt2
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            //TODO : The event of REFRESH and REFRESH
+            //The event of REFRESH and REFRESH
             //By this we can view the time at real time
             ts = sw.Elapsed;
             STWC.Text = String.Format("{0}:{1}:{2}.{3}",
@@ -181,7 +186,7 @@ namespace Pt2
 
         private void Entered_TextChanged(object sender, EventArgs e)
         {
-            //TODO : If the user changed the TextBox, we need to start the stopwatch
+            //If the user changed the TextBox, we need to start the stopwatch
             if (isFirst)
             {
                 StartTime();
@@ -191,7 +196,7 @@ namespace Pt2
 
         private void Judge1(String s)
         {
-            //TODO : If the user inputed something like String, we used this method
+            //If the user inputed something like String, we used this method
             if (s == Libraries.numToSign[rd])
             {
                 r++;
@@ -211,7 +216,7 @@ namespace Pt2
 
         private void StartTime()
         {
-            //TODO : Start our stopwatch
+            //Start our stopwatch
             sw = new System.Diagnostics.Stopwatch();
             ts = new TimeSpan();
             timer1.Interval = 1;
@@ -221,13 +226,13 @@ namespace Pt2
 
         private void Stop_Click(object sender, EventArgs e)
         {
-            //TODO : If the user cilcked this button, we need STOP THE TIME!
+            //If the user cilcked this button, we need STOP THE TIME!
             StopTime();
         }
 
         private void ResetTime()
         {
-            //TODO : Now the user wanna leave, or he/she changed the function
+            //Now the user wanna leave, or he/she changed the function
             timer1.Stop();
             sw.Stop();
             STWC.Text = tt;
@@ -235,7 +240,7 @@ namespace Pt2
 
         private void StopTime()
         {
-            //TODO : We need ST0P TH3 T1M3
+            // We need ST0P TH3 T1M3
             timer1.Stop();
             if (sw != null)     //If the user hasnot inputed anything, we CANNOT stop the stwc
             {
@@ -266,9 +271,15 @@ namespace Pt2
             CompletelyRestart();
         }
 
+        private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            About f2 = new About();
+            f2.Show();
+        }
+
         private void RBC(int chose)
         {
-            //TODO : When the user changed the fuction, we need run this method
+            //When the user changed the fuction, we need run this method
             choice = chose;
             isFirst = true;
             StopTime();
@@ -277,7 +288,7 @@ namespace Pt2
 
         private void CompletelyRestart()
         {
-            //TODO : Reset all data like init
+            //Reset all data like init
             choice = 3; rd = 1;
             w = 0; r = 0; d = 0;
             choice = 3;
@@ -288,6 +299,7 @@ namespace Pt2
             STWC.Text = tt;
             Yes.Text = rr;
             Wro.Text = ww;
+            Anyli.Text = aa;
             Tip.Text = null;
             DNA.Text = dd;
             NewMethod12();
