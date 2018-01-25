@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace Pt2
 {
@@ -18,7 +19,10 @@ namespace Pt2
         String rr = "正确：";
         String ww = "错误：";
         String dd = "未回答：";
-
+        String tt = "0:0:0.00";
+        Stopwatch sw;
+        TimeSpan ts;
+        bool isFirst = false;
 
         public Form1()
         {
@@ -35,6 +39,7 @@ namespace Pt2
             this.AcceptButton = Send;
             Min.Text = "1";
             Max.Text = "20";
+            isFirst = true;
             Refresh0();
         }
 
@@ -73,7 +78,10 @@ namespace Pt2
             {
                 choice = 3;
             }
+            isFirst = true;
+            ResetTime();
             Refresh0();
+
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -82,6 +90,8 @@ namespace Pt2
             {
                 choice = 1;
             }
+            isFirst = true;
+            ResetTime();
             Refresh0();
         }
 
@@ -91,6 +101,8 @@ namespace Pt2
             {
                 choice = 2;
             }
+            isFirst = true;
+            ResetTime();
             Refresh0();
         }
 
@@ -130,6 +142,7 @@ namespace Pt2
             {
                 DidNotAnswer();
             }
+            isFirst = false;
         }
 
         private void DidNotAnswer()
@@ -152,6 +165,21 @@ namespace Pt2
 
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            ts = sw.Elapsed;
+            STWC.Text = String.Format("{0}:{1}:{2}.{3}", 
+                ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds / 10);
+        }
+
+        private void Entered_TextChanged(object sender, EventArgs e)
+        {
+            if (isFirst)
+            {
+                StartTime();
+            }
+        }
+
         private void Judge1(String s)
         {
             if (s == Libraries.numToSign[rd])
@@ -170,6 +198,24 @@ namespace Pt2
             }
             Refresh0();
         }
+
+        private void StartTime()
+        {
+            sw = new System.Diagnostics.Stopwatch();
+            ts = new TimeSpan();
+            timer1.Interval = 1;
+            sw.Start();
+            timer1.Start();
+        }
+
+        private void ResetTime()
+        {
+            timer1.Stop();
+            STWC.Text = tt;
+
+        }
+
+
     }        
 }
 

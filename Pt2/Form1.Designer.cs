@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.Show = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.STWC = new System.Windows.Forms.Label();
             this.Entered = new System.Windows.Forms.TextBox();
             this.Send = new System.Windows.Forms.Button();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -38,7 +38,6 @@
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Stop = new System.Windows.Forms.Button();
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.Min = new System.Windows.Forms.TextBox();
             this.Max = new System.Windows.Forms.TextBox();
             this.Yes = new System.Windows.Forms.Label();
@@ -57,15 +56,15 @@
             this.Show.TabIndex = 0;
             this.Show.Text = "Pt";
             // 
-            // label2
+            // STWC
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("SimSun", 20F);
-            this.label2.Location = new System.Drawing.Point(501, 45);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(237, 40);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "00:00:00.00";
+            this.STWC.AutoSize = true;
+            this.STWC.Font = new System.Drawing.Font("SimSun", 20F);
+            this.STWC.Location = new System.Drawing.Point(501, 45);
+            this.STWC.Name = "STWC";
+            this.STWC.Size = new System.Drawing.Size(177, 40);
+            this.STWC.TabIndex = 1;
+            this.STWC.Text = "0:0:0.00";
             // 
             // Entered
             // 
@@ -74,6 +73,7 @@
             this.Entered.Name = "Entered";
             this.Entered.Size = new System.Drawing.Size(228, 179);
             this.Entered.TabIndex = 2;
+            this.Entered.TextChanged += new System.EventHandler(this.Entered_TextChanged);
             // 
             // Send
             // 
@@ -123,8 +123,13 @@
             this.radioButton3.UseVisualStyleBackColor = true;
             this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Stop
             // 
+            this.Stop.Font = new System.Drawing.Font("SimHei", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Stop.Location = new System.Drawing.Point(461, 231);
             this.Stop.Name = "Stop";
             this.Stop.Size = new System.Drawing.Size(173, 179);
@@ -202,7 +207,7 @@
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.Send);
             this.Controls.Add(this.Entered);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.STWC);
             this.Controls.Add(this.Show);
             this.Name = "Form1";
             this.Text = "元素周期表问答 Alpha4";
@@ -215,7 +220,7 @@
         #endregion
 
         private System.Windows.Forms.Label Show;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label STWC;
         private System.Windows.Forms.TextBox Entered;
         private System.Windows.Forms.Button Send;
         private System.Windows.Forms.RadioButton radioButton1;
@@ -223,7 +228,6 @@
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button Stop;
-        private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.TextBox Min;
         private System.Windows.Forms.TextBox Max;
         private System.Windows.Forms.Label Yes;
