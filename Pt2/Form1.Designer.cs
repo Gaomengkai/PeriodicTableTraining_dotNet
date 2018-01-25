@@ -44,6 +44,7 @@
             this.Wro = new System.Windows.Forms.Label();
             this.Tip = new System.Windows.Forms.Label();
             this.DNA = new System.Windows.Forms.Label();
+            this.RST = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Show
@@ -189,6 +190,17 @@
             this.DNA.TabIndex = 13;
             this.DNA.Text = "未回答：";
             // 
+            // RST
+            // 
+            this.RST.Font = new System.Drawing.Font("SimSun", 12F);
+            this.RST.Location = new System.Drawing.Point(640, 231);
+            this.RST.Name = "RST";
+            this.RST.Size = new System.Drawing.Size(98, 48);
+            this.RST.TabIndex = 14;
+            this.RST.Text = "重启";
+            this.RST.UseVisualStyleBackColor = true;
+            this.RST.Click += new System.EventHandler(this.RST_Click);
+            // 
             // Form1
             // 
             this.AcceptButton = this.Send;
@@ -196,6 +208,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(750, 449);
+            this.Controls.Add(this.RST);
             this.Controls.Add(this.DNA);
             this.Controls.Add(this.Tip);
             this.Controls.Add(this.Wro);
@@ -211,7 +224,7 @@
             this.Controls.Add(this.STWC);
             this.Controls.Add(this.Show);
             this.Name = "Form1";
-            this.Text = "元素周期表问答 Alpha10";
+            this.Text = "元素周期表问答 Alpha11";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -235,6 +248,7 @@
         private System.Windows.Forms.Label Wro;
         private System.Windows.Forms.Label Tip;
         private System.Windows.Forms.Label DNA;
+        private System.Windows.Forms.Button RST;
     }
 }
 

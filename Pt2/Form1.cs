@@ -220,7 +220,10 @@ namespace Pt2
         private void StopTime()
         {
             timer1.Stop();
-            sw.Stop();
+            if(sw != null)
+            {
+                sw.Stop();
+            }
             STWC.Text = String.Format("{0}:{1}:{2}.{3}",
                 Last.Hours, Last.Minutes, Last.Seconds, Last.Milliseconds / 10);
             isFirst = true;
@@ -238,12 +241,31 @@ namespace Pt2
             }
         }
 
+        private void RST_Click(object sender, EventArgs e)
+        {
+            CompletelyRestart();
+        }
+
         private void RBC(int chose)
         {
             choice = chose;
             isFirst = true;
             StopTime();
             Refresh0();
+        }
+
+        private void CompletelyRestart()
+        {
+            choice = 3;rd = 1;
+            w = 0;r = 0;d = 0;
+            choice = 3;
+            radioButton3.Checked = true;
+            radioButton2.Checked = false;
+            radioButton1.Checked = false;
+            isFirst = false;
+            STWC.Text = tt;
+            NewMethod12();
+            ResetTime();
         }
 
     }        
