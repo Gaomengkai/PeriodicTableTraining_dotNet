@@ -13,7 +13,7 @@ namespace Pt2
 {
     public partial class Form1 : Form
     {
-        int choice=3;
+        int choice = 3;
         int rd;
         int w = 0, r = 0, d = 0;
         String rr = "正确：";
@@ -56,7 +56,7 @@ namespace Pt2
             Element element = new Element(rd);
             String name = element.GetName();
             String sign = element.GetSign();
-            String stmp = null ;
+            String stmp = null;
             switch (choice)
             {
                 case 3:
@@ -120,15 +120,16 @@ namespace Pt2
         private void Send_Click(object sender, EventArgs e)
         {
             String s = Entered.Text;
-            if (s != "") { 
-            if (s[0] < 'A' && (choice == 1 || choice == 3))
+            if (s != "")
             {
-                Judge0(Convert.ToInt32(s));
-            }
-            else
-            {
-                Judge1(s);
-            }
+                if (s[0] < 'A' && (choice == 1 || choice == 3))
+                {
+                    Judge0(Convert.ToInt32(s));
+                }
+                else
+                {
+                    Judge1(s);
+                }
             }
             else
             {
@@ -136,7 +137,8 @@ namespace Pt2
             }
             isFirst = false;
             Last = ReadTime();
-            if (Last.Equals(empty)){
+            if (Last.Equals(empty))
+            {
                 isFirst = true;
             }
         }
@@ -164,7 +166,7 @@ namespace Pt2
         private void timer1_Tick(object sender, EventArgs e)
         {
             ts = sw.Elapsed;
-            STWC.Text = String.Format("{0}:{1}:{2}.{3}", 
+            STWC.Text = String.Format("{0}:{1}:{2}.{3}",
                 ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds / 10);
         }
 
@@ -173,6 +175,7 @@ namespace Pt2
             if (isFirst)
             {
                 StartTime();
+                isFirst = false;
             }
         }
 
@@ -220,7 +223,7 @@ namespace Pt2
         private void StopTime()
         {
             timer1.Stop();
-            if(sw != null)
+            if (sw != null)
             {
                 sw.Stop();
             }
@@ -256,17 +259,21 @@ namespace Pt2
 
         private void CompletelyRestart()
         {
-            choice = 3;rd = 1;
-            w = 0;r = 0;d = 0;
+            choice = 3; rd = 1;
+            w = 0; r = 0; d = 0;
             choice = 3;
             radioButton3.Checked = true;
             radioButton2.Checked = false;
             radioButton1.Checked = false;
             isFirst = false;
             STWC.Text = tt;
+            Yes.Text = rr;
+            Wro.Text = ww;
+            Tip.Text = null;
+            DNA.Text = dd;
             NewMethod12();
             ResetTime();
         }
 
-    }        
+    }
 }
