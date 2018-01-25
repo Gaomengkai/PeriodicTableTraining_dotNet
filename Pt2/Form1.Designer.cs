@@ -44,6 +44,7 @@
             this.Yes = new System.Windows.Forms.Label();
             this.Wro = new System.Windows.Forms.Label();
             this.Tip = new System.Windows.Forms.Label();
+            this.DNA = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Show
@@ -173,6 +174,15 @@
             this.Tip.Size = new System.Drawing.Size(0, 30);
             this.Tip.TabIndex = 12;
             // 
+            // DNA
+            // 
+            this.DNA.AutoSize = true;
+            this.DNA.Location = new System.Drawing.Point(614, 164);
+            this.DNA.Name = "DNA";
+            this.DNA.Size = new System.Drawing.Size(80, 18);
+            this.DNA.TabIndex = 13;
+            this.DNA.Text = "未回答：";
+            // 
             // Form1
             // 
             this.AcceptButton = this.Send;
@@ -180,6 +190,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(750, 449);
+            this.Controls.Add(this.DNA);
             this.Controls.Add(this.Tip);
             this.Controls.Add(this.Wro);
             this.Controls.Add(this.Yes);
@@ -218,6 +229,7 @@
         private System.Windows.Forms.Label Yes;
         private System.Windows.Forms.Label Wro;
         private System.Windows.Forms.Label Tip;
+        private System.Windows.Forms.Label DNA;
     }
 }
 

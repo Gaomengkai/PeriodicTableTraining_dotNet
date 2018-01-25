@@ -14,9 +14,10 @@ namespace Pt2
     {
         int choice=3;
         int rd;
-        int w = 0, r = 0;
-        String rr = "回答正确：";
-        String ww = "回答错误：";
+        int w = 0, r = 0, d = 0;
+        String rr = "正确：";
+        String ww = "错误：";
+        String dd = "未回答：";
 
 
         public Form1()
@@ -115,6 +116,7 @@ namespace Pt2
         private void Send_Click(object sender, EventArgs e)
         {
             String s = Entered.Text;
+            if (s != "") { 
             if (s[0] < 'A' && (choice == 1 || choice == 3))
             {
                 Judge0(Convert.ToInt32(s));
@@ -123,6 +125,31 @@ namespace Pt2
             {
                 Judge1(s);
             }
+            }
+            else
+            {
+                DidNotAnswer();
+            }
+        }
+
+        private void DidNotAnswer()
+        {
+            if (choice == 2)
+            {
+                d++;
+                Tip.ForeColor = Color.Orange;
+                Tip.Text = "请回答问题!答案：" + Libraries.numToSign[rd];
+                DNA.Text = dd + Convert.ToString(d);
+            }
+            else
+            {
+                d++;
+                Tip.ForeColor = Color.Orange;
+                Tip.Text = "请回答问题!答案：" + Convert.ToString(rd);
+                DNA.Text = dd + Convert.ToString(d);
+            }
+            Refresh0();
+
         }
 
         private void Judge1(String s)
