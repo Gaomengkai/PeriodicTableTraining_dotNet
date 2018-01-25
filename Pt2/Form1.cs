@@ -115,7 +115,7 @@ namespace Pt2
         private void Send_Click(object sender, EventArgs e)
         {
             String s = Entered.Text;
-            if (s[0] < 'A')
+            if (s[0] < 'A' && (choice == 1 || choice == 3))
             {
                 Judge0(Convert.ToInt32(s));
             }
@@ -124,6 +124,7 @@ namespace Pt2
                 Judge1(s);
             }
         }
+
         private void Judge1(String s)
         {
             if (s == Libraries.numToSign[rd])
