@@ -21,5 +21,32 @@ namespace Pt2
         {
             this.Close();
         }
+
+        private void GNU_Click(object sender, EventArgs e)
+        {
+            GPLV3 neopen = new GPLV3();
+            Sunisoft.IrisSkin.SkinEngine skin = new Sunisoft.IrisSkin.SkinEngine(neopen)
+            {
+                SkinFile = "Office2007.ssk",
+                TitleFont = new System.Drawing.Font("微软雅黑", 10F)// 指定标题栏的Font。
+            };
+            neopen.Show(); 
+        }
+
+        private void updatelog_Click(object sender, EventArgs e)
+        {
+            UpdateLog udl = new UpdateLog();
+            Sunisoft.IrisSkin.SkinEngine skin = new Sunisoft.IrisSkin.SkinEngine(udl)
+            {
+                SkinFile = "Office2007.ssk",
+                TitleFont = new System.Drawing.Font("微软雅黑", 10F)// 指定标题栏的Font。
+            };
+            udl.Show();
+        }
+
+        private void About_Load(object sender, EventArgs e)
+        {
+            textBox1.Text += "2018年1月26日 " + "Alpha17";
+        }
     }
 }

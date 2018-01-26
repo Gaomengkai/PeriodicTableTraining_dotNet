@@ -111,17 +111,23 @@ namespace Pt2
         }
     }
 
-    static class Program
+    public static class Program
     {
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        
+        public static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+           // Application.Run(new Form1());
+            Form1 frm = new Form1();
+            Sunisoft.IrisSkin.SkinEngine skin = new Sunisoft.IrisSkin.SkinEngine((System.ComponentModel.Component)frm);
+            skin.SkinFile = "Office2007.ssk"; 
+            skin.TitleFont = new System.Drawing.Font("微软雅黑", 10F);// 指定标题栏的Font。
+            Application.Run(frm); 
         }
     }
 }

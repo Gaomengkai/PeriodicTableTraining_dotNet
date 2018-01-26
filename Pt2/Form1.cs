@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
-
+using System.Runtime.InteropServices;
 namespace Pt2
 {
     public partial class Form1 : Form
@@ -28,7 +28,8 @@ namespace Pt2
         bool isFirst = false;
         TimeSpan empty = new TimeSpan(0, 0, 0, 0, 0);
         String aa = null;
-
+        String Version = "Alpha17";
+        
         public Form1()
         {
             InitializeComponent();
@@ -42,6 +43,7 @@ namespace Pt2
         public void NewMethod12()
         {
             //First running initialization
+            this.Text = "元素周期表问答 " + Version;
             aa = Anyli.Text;
             this.AcceptButton = Send;
             Min.Text = "1";
@@ -111,7 +113,7 @@ namespace Pt2
             {
                 r++;                        //Right number plus 1 itself
                 Tip.Text = "回答正确";
-                Tip.ForeColor = Color.Lime;
+                Tip.ForeColor = Color.LimeGreen;
                 Yes.Text = rr + Convert.ToString(r);
             }
             else
@@ -147,6 +149,7 @@ namespace Pt2
             Last = ReadTime();                  //Let's get the time when the user inputed data
             a = (double)r * 100 / (r + w);
             Anyli.Text = aa + a.ToString("0.00") + "%";
+
             if (Last.Equals(empty))
             {
                 isFirst = true;                 //But this time stwc hasn't begun working!
@@ -201,7 +204,7 @@ namespace Pt2
             {
                 r++;
                 Tip.Text = "回答正确";
-                Tip.ForeColor = Color.Lime;
+                Tip.ForeColor = Color.LimeGreen;
                 Yes.Text = rr + Convert.ToString(r);
             }
             else
@@ -233,9 +236,12 @@ namespace Pt2
         private void ResetTime()
         {
             //Now the user wanna leave, or he/she changed the function
-            timer1.Stop();
-            sw.Stop();
-            STWC.Text = tt;
+            if (!isFirst)
+            {
+                timer1.Stop();
+                sw.Stop();
+                STWC.Text = tt;
+            }
         }
 
         private void StopTime()
@@ -273,8 +279,13 @@ namespace Pt2
 
         private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            About f2 = new About();
-            f2.Show();
+            About openq = new About();
+            Sunisoft.IrisSkin.SkinEngine skin = new Sunisoft.IrisSkin.SkinEngine(openq)
+            {
+                SkinFile = "Office2007.ssk",
+                TitleFont = new System.Drawing.Font("微软雅黑", 10F)// 指定标题栏的Font。
+            };
+            openq.Show();
         }
 
         private void RBC(int chose)

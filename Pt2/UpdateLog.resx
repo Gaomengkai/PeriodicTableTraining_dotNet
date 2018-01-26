@@ -117,4 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>&gt;&gt;&gt;2018/1/26 19:07:51 Alpha16 :	Add a skin of "OFFICE2007" to make it more beautiful;_By Duan Yichen
+				Add a form of showing the Licence of GNU;_By Duan Yichen
+&gt;&gt;&gt;2018/1/25 23:35:07 Alpha15 :	Add a function of calculating accuracy;_By Gao Mengkai
+				Add a form of showing "ABOUT";_By Gao Mengkai
+&gt;&gt;&gt;2018/1/25 11:48:15 Alpha11 : 	Add a button of "RESTART", and fix some bugs;_By Gao Mengkai
+&gt;&gt;&gt;2018/1/25 11:37:13 Alpha10 : 	Integrate codes;_By Gao Mengkai
+&gt;&gt;&gt;2018/1/25 11:29:17 Alpha9  : 	Add a function of "STOP TIMING", and fix some bugs;_By Gao Mengkai
+				Add a stopwatch;_By Gao Mengkai
+				Add a function of judging "DID NOT INPUT";_By Gao Mengkai
+				Add a function of "INPUT SYMBOLS BY NUMBER";_By Gao Mengkai
+				Fix some bugs;_By Gao Mengkai
+&gt;&gt;&gt;2018/1/24 21:12:35 Alpha4  :	First Publish;_By Gao Mengkai
+				Add some basic functions;_By Gao Mengkai
+				Only add 2 functions to make it usable;_By Gao Mengkai</value>
+  </data>
 </root>

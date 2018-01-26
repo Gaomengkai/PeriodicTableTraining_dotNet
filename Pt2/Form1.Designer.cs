@@ -49,6 +49,7 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.Anyli = new System.Windows.Forms.Label();
+            this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,7 +88,7 @@
             this.Send.Font = new System.Drawing.Font("YouYuan", 70F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Send.Location = new System.Drawing.Point(282, 246);
             this.Send.Name = "Send";
-            this.Send.Size = new System.Drawing.Size(173, 179);
+            this.Send.Size = new System.Drawing.Size(172, 178);
             this.Send.TabIndex = 3;
             this.Send.Text = "交";
             this.Send.UseVisualStyleBackColor = true;
@@ -96,7 +97,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(452, 133);
+            this.radioButton1.Location = new System.Drawing.Point(452, 134);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(159, 22);
             this.radioButton1.TabIndex = 4;
@@ -137,9 +138,9 @@
             // Stop
             // 
             this.Stop.Font = new System.Drawing.Font("SimHei", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Stop.Location = new System.Drawing.Point(461, 246);
+            this.Stop.Location = new System.Drawing.Point(460, 246);
             this.Stop.Name = "Stop";
-            this.Stop.Size = new System.Drawing.Size(173, 179);
+            this.Stop.Size = new System.Drawing.Size(172, 178);
             this.Stop.TabIndex = 7;
             this.Stop.Text = "停";
             this.Stop.UseVisualStyleBackColor = true;
@@ -154,7 +155,7 @@
             // 
             // Max
             // 
-            this.Max.Location = new System.Drawing.Point(306, 91);
+            this.Max.Location = new System.Drawing.Point(306, 92);
             this.Max.Name = "Max";
             this.Max.Size = new System.Drawing.Size(100, 28);
             this.Max.TabIndex = 9;
@@ -171,7 +172,7 @@
             // Wro
             // 
             this.Wro.AutoSize = true;
-            this.Wro.Location = new System.Drawing.Point(618, 133);
+            this.Wro.Location = new System.Drawing.Point(618, 134);
             this.Wro.Name = "Wro";
             this.Wro.Size = new System.Drawing.Size(62, 18);
             this.Wro.TabIndex = 11;
@@ -182,7 +183,7 @@
             this.Tip.AutoSize = true;
             this.Tip.Font = new System.Drawing.Font("SimSun", 15F);
             this.Tip.ForeColor = System.Drawing.Color.Black;
-            this.Tip.Location = new System.Drawing.Point(31, 182);
+            this.Tip.Location = new System.Drawing.Point(32, 182);
             this.Tip.Name = "Tip";
             this.Tip.Size = new System.Drawing.Size(0, 30);
             this.Tip.TabIndex = 12;
@@ -190,7 +191,7 @@
             // DNA
             // 
             this.DNA.AutoSize = true;
-            this.DNA.Location = new System.Drawing.Point(617, 161);
+            this.DNA.Location = new System.Drawing.Point(616, 160);
             this.DNA.Name = "DNA";
             this.DNA.Size = new System.Drawing.Size(80, 18);
             this.DNA.TabIndex = 13;
@@ -214,7 +215,7 @@
             this.aboutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(767, 32);
+            this.menuStrip1.Size = new System.Drawing.Size(766, 32);
             this.menuStrip1.TabIndex = 15;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -242,13 +243,22 @@
             this.Anyli.TabIndex = 16;
             this.Anyli.Text = "正确率：";
             // 
+            // skinEngine1
+            // 
+            this.skinEngine1.@__DrawButtonFocusRectangle = true;
+            this.skinEngine1.DisabledButtonTextColor = System.Drawing.Color.Gray;
+            this.skinEngine1.DisabledMenuFontColor = System.Drawing.SystemColors.GrayText;
+            this.skinEngine1.InactiveCaptionColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.skinEngine1.SerialNumber = "";
+            this.skinEngine1.SkinFile = null;
+            // 
             // Form1
             // 
             this.AcceptButton = this.Send;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(767, 461);
+            this.ClientSize = new System.Drawing.Size(766, 460);
             this.Controls.Add(this.Anyli);
             this.Controls.Add(this.RST);
             this.Controls.Add(this.DNA);
@@ -268,7 +278,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "元素周期表问答 Alpha15";
+            this.Text = "元素周期表问答";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -299,6 +309,7 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem1;
         private System.Windows.Forms.Label Anyli;
+        private Sunisoft.IrisSkin.SkinEngine skinEngine1;
     }
 }
 
