@@ -15,6 +15,7 @@ namespace Pt2
         public GPLV3()
         {
             InitializeComponent();
+            textBox1.Select(0, 0);
         }
 
     }

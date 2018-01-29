@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,9 +26,10 @@ namespace Pt2
         private void GNU_Click(object sender, EventArgs e)
         {
             GPLV3 neopen = new GPLV3();
-            Sunisoft.IrisSkin.SkinEngine skin = new Sunisoft.IrisSkin.SkinEngine(neopen)
+            byte[] obj = (byte[])Pt.Properties.Resources.ResourceManager.GetObject("office2007");
+            Sunisoft.IrisSkin.SkinEngine skin = new Sunisoft.IrisSkin.SkinEngine((System.ComponentModel.Component)neopen)
             {
-                SkinFile = "Office2007.ssk",
+                SkinStream = new MemoryStream(obj),
                 TitleFont = new System.Drawing.Font("微软雅黑", 10F)// 指定标题栏的Font。
             };
             neopen.Show(); 
@@ -36,9 +38,10 @@ namespace Pt2
         private void updatelog_Click(object sender, EventArgs e)
         {
             UpdateLog udl = new UpdateLog();
-            Sunisoft.IrisSkin.SkinEngine skin = new Sunisoft.IrisSkin.SkinEngine(udl)
+            byte[] obj = (byte[])Pt.Properties.Resources.ResourceManager.GetObject("office2007");
+            Sunisoft.IrisSkin.SkinEngine skin = new Sunisoft.IrisSkin.SkinEngine((System.ComponentModel.Component)udl)
             {
-                SkinFile = "Office2007.ssk",
+                SkinStream = new MemoryStream(obj),
                 TitleFont = new System.Drawing.Font("微软雅黑", 10F)// 指定标题栏的Font。
             };
             udl.Show();
@@ -46,7 +49,7 @@ namespace Pt2
 
         private void About_Load(object sender, EventArgs e)
         {
-            textBox1.Text += "2018年1月26日 " + "Alpha17";
+            textBox1.Text += "2018年1月26日 " + "Alpha19";
         }
     }
 }

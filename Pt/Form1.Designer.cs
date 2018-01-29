@@ -50,6 +50,9 @@
             this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.Anyli = new System.Windows.Forms.Label();
             this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine();
+            this.begin = new System.Windows.Forms.Label();
+            this.end = new System.Windows.Forms.Label();
+            this.rB4 = new System.Windows.Forms.RadioButton();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -101,7 +104,6 @@
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(159, 22);
             this.radioButton1.TabIndex = 4;
-            this.radioButton1.TabStop = true;
             this.radioButton1.Text = "根据名称写序号";
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
@@ -113,7 +115,6 @@
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(159, 22);
             this.radioButton2.TabIndex = 5;
-            this.radioButton2.TabStop = true;
             this.radioButton2.Text = "根据序号写符号";
             this.radioButton2.UseVisualStyleBackColor = true;
             this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
@@ -126,7 +127,6 @@
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(159, 22);
             this.radioButton3.TabIndex = 6;
-            this.radioButton3.TabStop = true;
             this.radioButton3.Text = "根据符号写序号";
             this.radioButton3.UseVisualStyleBackColor = true;
             this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
@@ -150,15 +150,21 @@
             // 
             this.Min.Location = new System.Drawing.Point(306, 56);
             this.Min.Name = "Min";
-            this.Min.Size = new System.Drawing.Size(100, 28);
+            this.Min.Size = new System.Drawing.Size(55, 28);
             this.Min.TabIndex = 8;
+            this.Min.Text = "1";
+            this.Min.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Min.TextChanged += new System.EventHandler(this.Min_TextChanged);
             // 
             // Max
             // 
             this.Max.Location = new System.Drawing.Point(306, 92);
             this.Max.Name = "Max";
-            this.Max.Size = new System.Drawing.Size(100, 28);
+            this.Max.Size = new System.Drawing.Size(55, 28);
             this.Max.TabIndex = 9;
+            this.Max.Text = "36";
+            this.Max.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Max.TextChanged += new System.EventHandler(this.Max_TextChanged);
             // 
             // Yes
             // 
@@ -191,7 +197,7 @@
             // DNA
             // 
             this.DNA.AutoSize = true;
-            this.DNA.Location = new System.Drawing.Point(616, 160);
+            this.DNA.Location = new System.Drawing.Point(617, 162);
             this.DNA.Name = "DNA";
             this.DNA.Size = new System.Drawing.Size(80, 18);
             this.DNA.TabIndex = 13;
@@ -237,7 +243,7 @@
             // Anyli
             // 
             this.Anyli.AutoSize = true;
-            this.Anyli.Location = new System.Drawing.Point(620, 186);
+            this.Anyli.Location = new System.Drawing.Point(618, 191);
             this.Anyli.Name = "Anyli";
             this.Anyli.Size = new System.Drawing.Size(80, 18);
             this.Anyli.TabIndex = 16;
@@ -252,6 +258,36 @@
             this.skinEngine1.SerialNumber = "";
             this.skinEngine1.SkinFile = null;
             // 
+            // begin
+            // 
+            this.begin.AutoSize = true;
+            this.begin.Location = new System.Drawing.Point(207, 61);
+            this.begin.Name = "begin";
+            this.begin.Size = new System.Drawing.Size(98, 18);
+            this.begin.TabIndex = 17;
+            this.begin.Text = "开始的元素";
+            // 
+            // end
+            // 
+            this.end.AutoSize = true;
+            this.end.BackColor = System.Drawing.Color.Transparent;
+            this.end.Location = new System.Drawing.Point(210, 97);
+            this.end.Name = "end";
+            this.end.Size = new System.Drawing.Size(98, 18);
+            this.end.TabIndex = 18;
+            this.end.Text = "结束的元素";
+            // 
+            // rB4
+            // 
+            this.rB4.AutoSize = true;
+            this.rB4.Location = new System.Drawing.Point(452, 191);
+            this.rB4.Name = "rB4";
+            this.rB4.Size = new System.Drawing.Size(159, 22);
+            this.rB4.TabIndex = 19;
+            this.rB4.Text = "写相对原子质量";
+            this.rB4.UseVisualStyleBackColor = true;
+            this.rB4.CheckedChanged += new System.EventHandler(this.rB4_CheckedChanged);
+            // 
             // Form1
             // 
             this.AcceptButton = this.Send;
@@ -259,13 +295,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(766, 460);
+            this.Controls.Add(this.rB4);
+            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.Max);
+            this.Controls.Add(this.end);
+            this.Controls.Add(this.begin);
             this.Controls.Add(this.Anyli);
             this.Controls.Add(this.RST);
             this.Controls.Add(this.DNA);
             this.Controls.Add(this.Tip);
             this.Controls.Add(this.Wro);
             this.Controls.Add(this.Yes);
-            this.Controls.Add(this.Max);
             this.Controls.Add(this.Min);
             this.Controls.Add(this.Stop);
             this.Controls.Add(this.radioButton3);
@@ -275,7 +315,6 @@
             this.Controls.Add(this.Entered);
             this.Controls.Add(this.STWC);
             this.Controls.Add(this.Show);
-            this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "元素周期表问答";
@@ -310,6 +349,9 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem1;
         private System.Windows.Forms.Label Anyli;
         private Sunisoft.IrisSkin.SkinEngine skinEngine1;
+        private System.Windows.Forms.Label begin;
+        private System.Windows.Forms.Label end;
+        private System.Windows.Forms.RadioButton rB4;
     }
 }
 

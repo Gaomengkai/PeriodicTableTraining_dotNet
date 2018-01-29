@@ -1,17 +1,16 @@
-﻿using System.Resources;
-using System.Reflection;
+﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("PeriodicTableTraining")]
+[assembly: AssemblyTitle("Pt")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("PeriodicTableTraining")]
-[assembly: AssemblyCopyright("Copyright © GMK&JackDuan 2018")]
+[assembly: AssemblyCompany("HP Inc.")]
+[assembly: AssemblyProduct("Pt")]
+[assembly: AssemblyCopyright("Copyright © HP Inc. 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -21,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("9f18e7bd-662a-498d-b9c2-1dfded61fb4a")]
+[assembly: Guid("4c921316-9992-48f6-af69-4027b9eb6b1e")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -33,7 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("0.0.0.17")]
-[assembly: AssemblyFileVersion("0.0.0.17")]
-[assembly: NeutralResourcesLanguage("zh")]
-
+[assembly: AssemblyVersion("0.0.0.19")]
+[assembly: AssemblyFileVersion("0.0.0.19")]

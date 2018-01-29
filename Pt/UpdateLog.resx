@@ -117,4 +117,39 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>&gt;&gt;&gt;2018/1/29 11:35:11 Alpha19:
+[INTEGRATE] I put the skin files and IrisSkin.dll into the EXE._By Gao Mengkai
+[FIX] GNU form's Select-all;_By Duan Yichen
+[FIX] GNU and this form does not have any theme, now fixed;_By Gao Mengkai
+&gt;&gt;&gt;2018/1/29 10:20:40 Alpha18:
+[ADD] a function of filling in the blank of Z;_By Gao Mengkai
+[INTEGRATE] codes;_By Gao Mengkai;_By Gao Mengkai
+[FIX] some bugs._By Gao Mengkai
+&gt;&gt;&gt;2018/1/26 21:50:49 Alpha17:
+[ADD] a form of GNU;_By Gao Mengkai
+[ADD] a form of Update Log;_By Gao Mengkai
+[CHANGE] a colour of text of Tips;
+&gt;&gt;&gt;2018/1/26 19:07:51 Alpha16 :	
+[ADD] a skin of "OFFICE2007" to make it more beautiful;_By Duan Yichen
+[ADD] a form of showing the Licence of GNU;_By Duan Yichen
+&gt;&gt;&gt;2018/1/25 23:35:07 Alpha15 :
+[ADD] a function of calculating accuracy;_By Gao Mengkai
+[ADD] a form of showing "ABOUT";_By Gao Mengkai
+&gt;&gt;&gt;2018/1/25 11:48:15 Alpha11 :
+[ADD] a button of "RESTART", and [FIX] some bugs;_By Gao Mengkai
+&gt;&gt;&gt;2018/1/25 11:37:13 Alpha10 : 
+[INTEGRATE] codes;_By Gao Mengkai
+&gt;&gt;&gt;2018/1/25 11:29:17 Alpha9  : 
+[ADD] a function of "STOP TIMING", and [FIX] some bugs;_By Gao Mengkai
+[ADD] a stopwatch;_By Gao Mengkai
+[ADD] a function of judging "DID NOT INPUT";_By Gao Mengkai
+[ADD] a function of "INPUT SYMBOLS BY NUMBER";_By Gao Mengkai
+[FIX] some bugs;_By Gao Mengkai
+&gt;&gt;&gt;2018/1/24 21:12:35 Alpha4  :	
+First [PUBLISH];_By Gao Mengkai
+[ADD] some basic functions;_By Gao Mengkai
+[ADD] 2 functions to make it usable;_By Gao Mengkai
+</value>
+  </data>
 </root>
