@@ -32,10 +32,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="IrisSkin4, Version=2006.3.22.45, Culture=neutral, PublicKeyToken=127be25a6db25e07, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\IrisSkin4.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="IrisSkin4">
+      <HintPath>.\IrisSkin4.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -63,6 +61,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GNU_License.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GNU_License.Designer.cs">
+      <DependentUpon>GNU_License.cs</DependentUpon>
+    </Compile>
     <Compile Include="GPLV3.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GNU_License.resx">
+      <DependentUpon>GNU_License.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GPLV3.resx">
       <DependentUpon>GPLV3.cs</DependentUpon>
@@ -119,6 +126,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="IrisSkin4.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpdateLog.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GPLv3.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -25,8 +25,19 @@ namespace Pt2
                 min ^= max;
                 max ^= min;
             }
-            rd = random.Next(min, max + 1);         //Get the random number for users
-            Element element = new Element(rd);      //We need build an object for Element
+            Element element = null;
+            switch (mode)
+            {
+                case 1:
+                    rd = random.Next(min, max + 1);
+                    element = new Element(rd);
+                    break;
+                case 2:
+                    rd = random.Next(0, 25);
+                    rd = Libraries.importElements[rd];
+                    element = new Element(rd);
+                    break;
+            }
             String name = element.GetName();
             String sign = element.GetSign();
             String stmp = null;
@@ -130,6 +141,13 @@ namespace Pt2
             radioButton2.Checked = false;
             radioButton1.Checked = false;
             isFirst = false;
+            begin.Visible = true;
+            end.Visible = true;
+            Min.Visible = true;
+            Max.Visible = true;
+            imEl.Visible = false;
+            mode = 1;
+            重要元素探索ToolStripMenuItem.Text = "重要元素探索";
             STWC.Text = tt;
             Yes.Text = rr;
             Wro.Text = ww;
@@ -181,6 +199,33 @@ namespace Pt2
             isFirst = true;
             StopTime();
             Refresh0();
+        }
+
+        private void ExploreImportElements()
+        {
+            switch (mode)
+            {
+                case 1:
+                    begin.Visible = false;
+                    end.Visible = false;
+                    Min.Visible = false;
+                    Max.Visible = false;
+                    imEl.Visible = true;
+                    mode = 2;
+                    重要元素探索ToolStripMenuItem.Text = "返回普通模式";
+                    Refresh0();
+                    break;
+                case 2:
+                    begin.Visible = true;
+                    end.Visible = true;
+                    Min.Visible = true;
+                    Max.Visible = true;
+                    imEl.Visible = false;
+                    mode = 1;
+                    重要元素探索ToolStripMenuItem.Text = "重要元素探索";
+                    Refresh0();
+                    break;
+            }
         }
     }
 }

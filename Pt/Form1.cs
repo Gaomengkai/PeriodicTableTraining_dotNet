@@ -30,7 +30,8 @@ namespace Pt2
         bool isFirst = false;
         TimeSpan empty = new TimeSpan(0, 0, 0, 0, 0);
         String aa = null;
-        String Version = "Alpha19";
+        String Version = "Alpha20";
+        int mode = 1;
 
         public Form1()
         {
@@ -171,6 +172,11 @@ namespace Pt2
                 TitleFont = new System.Drawing.Font("微软雅黑", 10F)// 指定标题栏的Font。
             };
             openq.Show();
+        }
+
+        private void 重要元素探索ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ExploreImportElements();
         }
 
         private void Min_TextChanged(object sender, EventArgs e)

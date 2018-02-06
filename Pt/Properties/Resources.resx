@@ -121,4 +121,10 @@
   <data name="office2007" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\office2007.ssk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="UpdateLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpdateLog.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
+  </data>
+  <data name="GPLv3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GPLv3.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
+  </data>
 </root>

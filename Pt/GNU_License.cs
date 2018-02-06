@@ -10,21 +10,17 @@ using System.Windows.Forms;
 
 namespace Pt2
 {
-    public partial class UpdateLog : Form
+    public partial class GNU_License : Form
     {
-        public UpdateLog()
+        public GNU_License()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void GNU_License_Load(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        private void UpdateLog_Load(object sender, EventArgs e)
-        {
-            textBox1.Text = Pt.Properties.Resources.UpdateLog;
+            textBox1.Text = Pt.Properties.Resources.GPLv3;
+            textBox1.Select(0, 0);
         }
     }
 }
