@@ -49,7 +49,7 @@ namespace Pt2
 
         private void About_Load(object sender, EventArgs e)
         {
-            textBox1.Text += "2018年1月31日 " + "Alpha20";
+            textBox1.Text += Libraries._comdate + ' ' + Libraries._version;
         }
     }
 }

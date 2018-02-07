@@ -30,7 +30,6 @@ namespace Pt2
         bool isFirst = false;
         TimeSpan empty = new TimeSpan(0, 0, 0, 0, 0);
         String aa = null;
-        String Version = "Alpha20";
         int mode = 1;
 
         public Form1()
@@ -51,13 +50,14 @@ namespace Pt2
                 SkinStream = new MemoryStream(obj),
                 TitleFont = new System.Drawing.Font("微软雅黑", 10F)// 指定标题栏的Font。
             };
+            Icon = Pt.Properties.Resources.logo4;
             NewMethod12();
         }
 
         public void NewMethod12()
         {
             //First running initialization
-            this.Text = "元素周期表问答 " + Version;
+            this.Text = "元素周期表问答 " + Libraries._version;
             aa = Anyli.Text;
             this.AcceptButton = Send;
             isFirst = true;
