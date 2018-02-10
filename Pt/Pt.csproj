@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{4C921316-9992-48F6-AF69-4027B9EB6B1E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Pt</RootNamespace>
-    <AssemblyName>Pt</AssemblyName>
+    <RootNamespace>Pt2</RootNamespace>
+    <AssemblyName>Periodic Table Training</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -35,8 +35,9 @@
     <ApplicationIcon>logo4.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="IrisSkin4">
-      <HintPath>.\IrisSkin4.dll</HintPath>
+    <Reference Include="IrisSkin4, Version=2006.3.22.45, Culture=neutral, PublicKeyToken=127be25a6db25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\IrisSkin4.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -56,6 +57,12 @@
     </Compile>
     <Compile Include="About.designer.cs">
       <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseTheme1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseTheme1.Designer.cs">
+      <DependentUpon>ChooseTheme1.cs</DependentUpon>
     </Compile>
     <Compile Include="Element.cs" />
     <Compile Include="Form1.cs">
@@ -92,9 +99,15 @@
       <DependentUpon>About.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChooseTheme1.resx">
+      <DependentUpon>ChooseTheme1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.zh-Hans.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GNU_License.resx">
       <DependentUpon>GNU_License.cs</DependentUpon>
@@ -126,13 +139,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Resources\office2007.ssk" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="IrisSkin4.dll" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\UpdateLog.txt" />

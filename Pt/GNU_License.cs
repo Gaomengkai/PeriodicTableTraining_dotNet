@@ -19,7 +19,7 @@ namespace Pt2
 
         private void GNU_License_Load(object sender, EventArgs e)
         {
-            textBox1.Text = Pt.Properties.Resources.GPLv3;
+            textBox1.Text = Properties.Resources.GPLv3;
             textBox1.Select(0, 0);
         }
     }

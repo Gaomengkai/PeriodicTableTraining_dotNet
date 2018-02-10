@@ -14,7 +14,6 @@ namespace Pt2
         {
             //Refresh all the elements and to fill the Labels
             Entered.Text = null;
-            Random random = new Random();           //We need random
             if (Min.Text == "") { Min.Text = "1"; }
             if (Max.Text == "") { Max.Text = "36"; }
             int min = Convert.ToInt32(Min.Text);    //Dafault is 1
@@ -25,31 +24,26 @@ namespace Pt2
                 min ^= max;
                 max ^= min;
             }
-            Element element = null;
             switch (mode)
             {
-                case 1:
+                case 1://Normal Mode
                     rd = random.Next(min, max + 1);
-                    element = new Element(rd);
                     break;
-                case 2:
+                case 2://Important Elements' Mode
                     rd = random.Next(0, 25);
                     rd = Libraries.importElements[rd];
-                    element = new Element(rd);
                     break;
             }
-            String name = element.GetName();
-            String sign = element.GetSign();
             String stmp = null;
             //Some choices for our users
             switch (choice)
             {
                 case 3:
                 case 4:
-                    stmp = sign;
+                    stmp = Libraries.numToSign[rd];
                     break;
                 case 1:
-                    stmp = name;
+                    stmp = Libraries.numToName[rd];
                     break;
                 case 2:
                     stmp = Convert.ToString(rd);

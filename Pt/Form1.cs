@@ -31,6 +31,7 @@ namespace Pt2
         TimeSpan empty = new TimeSpan(0, 0, 0, 0, 0);
         String aa = null;
         int mode = 1;
+        Random random = new Random();
 
         public Form1()
         {
@@ -43,14 +44,7 @@ namespace Pt2
             {
                 throw new ArgumentNullException(nameof(sender));
             }
-            byte[] obj = (byte[])Pt.Properties.Resources.ResourceManager.GetObject("office2007");
-            Sunisoft.IrisSkin.SkinEngine skin = new Sunisoft.IrisSkin.SkinEngine((System.ComponentModel.Component)this)
-            {
-                //byte[] obj = Properties.Resources.office2007;
-                SkinStream = new MemoryStream(obj),
-                TitleFont = new System.Drawing.Font("微软雅黑", 10F)// 指定标题栏的Font。
-            };
-            Icon = Pt.Properties.Resources.logo4;
+            Icon = Properties.Resources.logo4;
             NewMethod12();
         }
 
@@ -63,14 +57,9 @@ namespace Pt2
             isFirst = true;
             Refresh0();
         }
-
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton3.Checked)
-            {
-                RBC(3);
-            }
-        }
+        
+       
+        #region RadioButton_CHECK
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
@@ -92,6 +81,15 @@ namespace Pt2
         {
             if (rB4.Checked) { RBC(4); }
         }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton3.Checked)
+            {
+                RBC(3);
+            }
+        }
+        #endregion
 
         private void Send_Click(object sender, EventArgs e)
         {
@@ -160,23 +158,23 @@ namespace Pt2
         {
             CompletelyRestart();
         }
-
-        private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            About openq = new About();
-            byte[] obj = (byte[])Pt.Properties.Resources.ResourceManager.GetObject("office2007");
-            Sunisoft.IrisSkin.SkinEngine skin = new Sunisoft.IrisSkin.SkinEngine(openq)
-            {
-                SkinStream =  new MemoryStream(obj),
-                //SkinFile = "Office2007.ssk",
-                TitleFont = new System.Drawing.Font("微软雅黑", 10F)// 指定标题栏的Font。
-            };
-            openq.Show();
-        }
+        
 
         private void 重要元素探索ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ExploreImportElements();
+        }
+
+        private void chooseThemeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChooseTheme1 chooseTheme1 = new ChooseTheme1();
+            chooseTheme1.Show();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            About openq = new About();
+            openq.Show();
         }
 
         private void Min_TextChanged(object sender, EventArgs e)

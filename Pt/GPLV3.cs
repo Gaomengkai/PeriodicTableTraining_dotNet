@@ -21,12 +21,6 @@ namespace Pt2
         private void button1_Click(object sender, EventArgs e)
         {
             GNU_License formTmp1 = new GNU_License();
-            byte[] obj = (byte[])Pt.Properties.Resources.ResourceManager.GetObject("office2007");
-            Sunisoft.IrisSkin.SkinEngine skin = new Sunisoft.IrisSkin.SkinEngine((System.ComponentModel.Component)formTmp1)
-            {
-                SkinStream = new System.IO.MemoryStream(obj),
-                TitleFont = new System.Drawing.Font("微软雅黑", 10F)// 指定标题栏的Font。
-            };
             formTmp1.Show();
         }
     }

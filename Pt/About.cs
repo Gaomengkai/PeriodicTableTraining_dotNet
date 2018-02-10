@@ -25,25 +25,13 @@ namespace Pt2
 
         private void GNU_Click(object sender, EventArgs e)
         {
-            GPLV3 neopen = new GPLV3();
-            byte[] obj = (byte[])Pt.Properties.Resources.ResourceManager.GetObject("office2007");
-            Sunisoft.IrisSkin.SkinEngine skin = new Sunisoft.IrisSkin.SkinEngine((System.ComponentModel.Component)neopen)
-            {
-                SkinStream = new MemoryStream(obj),
-                TitleFont = new System.Drawing.Font("微软雅黑", 10F)// 指定标题栏的Font。
-            };
-            neopen.Show(); 
+            GPLV3 gPLV3 = new GPLV3();
+            gPLV3.Show();
         }
 
         private void updatelog_Click(object sender, EventArgs e)
         {
             UpdateLog udl = new UpdateLog();
-            byte[] obj = (byte[])Pt.Properties.Resources.ResourceManager.GetObject("office2007");
-            Sunisoft.IrisSkin.SkinEngine skin = new Sunisoft.IrisSkin.SkinEngine((System.ComponentModel.Component)udl)
-            {
-                SkinStream = new MemoryStream(obj),
-                TitleFont = new System.Drawing.Font("微软雅黑", 10F)// 指定标题栏的Font。
-            };
             udl.Show();
         }
 

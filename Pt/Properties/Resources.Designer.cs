@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Pt.Properties {
+namespace Pt2.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Pt.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Pt.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Pt2.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -92,17 +92,9 @@ namespace Pt.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] office2007 {
-            get {
-                object obj = ResourceManager.GetObject("office2007", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &gt;&gt;&gt;2018/1/31 11:20:41 Alpha20
+        ///   Looks up a localized string similar to &gt;&gt;&gt;2018/2/7 12:43:23 Alpha21
+        ///[ADD] ICON for this program;_By Gao Mengkai
+        ///&gt;&gt;&gt;2018/1/31 11:20:41 Alpha20
         ///[ADD] import elements mode;_By Gao Mengkai
         ///&gt;&gt;&gt;2018/1/29 11:35:11 Alpha19:
         ///[INTEGRATE] I put the skin files and IrisSkin.dll into the EXE._By Gao Mengkai
@@ -110,9 +102,7 @@ namespace Pt.Properties {
         ///[FIX] GNU and this form does not have any theme, now fixed;_By Gao Mengkai
         ///&gt;&gt;&gt;2018/1/29 10:20:40 Alpha18:
         ///[ADD] a function of filling in the blank of Z;_By Gao Mengkai
-        ///[INTEGRATE] codes;_By Gao Mengkai;_By Gao Mengkai
-        ///[FIX] some bugs._By Gao Mengkai
-        ///&gt;&gt;&gt;2018/1/26 21:50:49 Alp [rest of string was truncated]&quot;;.
+        ///[INTEGRATE] codes;_By Gao Mengkai; [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string UpdateLog {
             get {

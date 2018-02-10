@@ -24,7 +24,7 @@ namespace Pt2
 
         private void UpdateLog_Load(object sender, EventArgs e)
         {
-            textBox1.Text = Pt.Properties.Resources.UpdateLog;
+            textBox1.Text = Properties.Resources.UpdateLog;
         }
     }
 }

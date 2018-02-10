@@ -51,7 +51,7 @@
             this.查询工具ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.重要元素探索ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.chooseThemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Anyli = new System.Windows.Forms.Label();
             this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine();
             this.begin = new System.Windows.Forms.Label();
@@ -161,44 +161,44 @@
             // 
             // menuStrip1
             // 
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.chooseThemeToolStripMenuItem,
             this.toToolStripMenuItem,
             this.aboutToolStripMenuItem});
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
             // toToolStripMenuItem
             // 
+            resources.ApplyResources(this.toToolStripMenuItem, "toToolStripMenuItem");
             this.toToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.查询工具ToolStripMenuItem,
             this.重要元素探索ToolStripMenuItem});
             this.toToolStripMenuItem.Name = "toToolStripMenuItem";
-            resources.ApplyResources(this.toToolStripMenuItem, "toToolStripMenuItem");
             // 
             // 查询工具ToolStripMenuItem
             // 
-            this.查询工具ToolStripMenuItem.Name = "查询工具ToolStripMenuItem";
             resources.ApplyResources(this.查询工具ToolStripMenuItem, "查询工具ToolStripMenuItem");
+            this.查询工具ToolStripMenuItem.Name = "查询工具ToolStripMenuItem";
             // 
             // 重要元素探索ToolStripMenuItem
             // 
-            this.重要元素探索ToolStripMenuItem.Name = "重要元素探索ToolStripMenuItem";
             resources.ApplyResources(this.重要元素探索ToolStripMenuItem, "重要元素探索ToolStripMenuItem");
+            this.重要元素探索ToolStripMenuItem.Name = "重要元素探索ToolStripMenuItem";
             this.重要元素探索ToolStripMenuItem.Click += new System.EventHandler(this.重要元素探索ToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
-            this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem1});
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
-            // aboutToolStripMenuItem1
+            // chooseThemeToolStripMenuItem
             // 
-            this.aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
-            resources.ApplyResources(this.aboutToolStripMenuItem1, "aboutToolStripMenuItem1");
-            this.aboutToolStripMenuItem1.Click += new System.EventHandler(this.aboutToolStripMenuItem1_Click);
+            resources.ApplyResources(this.chooseThemeToolStripMenuItem, "chooseThemeToolStripMenuItem");
+            this.chooseThemeToolStripMenuItem.Name = "chooseThemeToolStripMenuItem";
+            this.chooseThemeToolStripMenuItem.Click += new System.EventHandler(this.chooseThemeToolStripMenuItem_Click);
             // 
             // Anyli
             // 
@@ -295,9 +295,8 @@
         private System.Windows.Forms.Button RST;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem1;
         private System.Windows.Forms.Label Anyli;
-        private Sunisoft.IrisSkin.SkinEngine skinEngine1;
+        public Sunisoft.IrisSkin.SkinEngine skinEngine1;
         private System.Windows.Forms.Label begin;
         private System.Windows.Forms.Label end;
         private System.Windows.Forms.RadioButton rB4;
@@ -305,6 +304,7 @@
         private System.Windows.Forms.ToolStripMenuItem 查询工具ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 重要元素探索ToolStripMenuItem;
         private System.Windows.Forms.Label imEl;
+        private System.Windows.Forms.ToolStripMenuItem chooseThemeToolStripMenuItem;
     }
 }
 
