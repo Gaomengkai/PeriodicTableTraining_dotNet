@@ -13,10 +13,13 @@ namespace Pt2
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        //[STAThread]
-        public static String ThemeFileName = null;
+        
+        private static String themeFileName = null;
         public static bool usedTheme = true;
         public static Form1 form1 = new Form1();
+
+        public static string ThemeFileName { get => themeFileName; set => themeFileName = value; }
+        [STAThread]
         public static void Main()
         {
             Application.EnableVisualStyles();

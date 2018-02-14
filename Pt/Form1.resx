@@ -149,26 +149,26 @@
   <data name="&gt;&gt;radioButton2.ZOrder" xml:space="preserve">
     <value>15</value>
   </data>
-  <data name="aboutToolStripMenuItem1.Text" xml:space="preserve">
-    <value>About</value>
-  </data>
   <data name="&gt;&gt;begin.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Max.Location" type="System.Drawing.Point, System.Drawing">
     <value>306, 92</value>
   </data>
+  <data name="查询工具ToolStripMenuItem.Text" xml:space="preserve">
+    <value>查询工具</value>
+  </data>
   <data name="Yes.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="Show.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 40</value>
+  <data name="DNA.Location" type="System.Drawing.Point, System.Drawing">
+    <value>616, 162</value>
   </data>
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;nULLToolStripMenuItem.Name" xml:space="preserve">
-    <value>nULLToolStripMenuItem</value>
+  <data name="&gt;&gt;imEl.Name" xml:space="preserve">
+    <value>imEl</value>
   </data>
   <data name="&gt;&gt;radioButton2.Name" xml:space="preserve">
     <value>radioButton2</value>
@@ -176,17 +176,17 @@
   <data name="Send.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;rB4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="radioButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 22</value>
   </data>
   <data name="Show.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun, 70pt</value>
   </data>
+  <data name="rB4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="RST.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun, 12pt</value>
-  </data>
-  <data name="begin.Text" xml:space="preserve">
-    <value>开始的元素</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Max.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
@@ -195,8 +195,8 @@
   <data name="&gt;&gt;DNA.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="DNA.Location" type="System.Drawing.Point, System.Drawing">
-    <value>616, 162</value>
+  <data name="STWC.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="end.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -216,17 +216,14 @@
   <data name="DNA.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
-  <data name="aboutToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 30</value>
-  </data>
   <data name="&gt;&gt;Entered.Name" xml:space="preserve">
     <value>Entered</value>
   </data>
   <data name="toToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 28</value>
   </data>
-  <data name="rB4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="Yes.Text" xml:space="preserve">
+    <value>正确：</value>
   </data>
   <data name="Show.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -252,11 +249,11 @@
   <data name="&gt;&gt;Min.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Stop.Text" xml:space="preserve">
+    <value>停</value>
+  </data>
   <data name="radioButton3.Size" type="System.Drawing.Size, System.Drawing">
     <value>159, 22</value>
-  </data>
-  <data name="nULLToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 30</value>
   </data>
   <data name="end.Text" xml:space="preserve">
     <value>结束的元素</value>
@@ -303,14 +300,20 @@
   <data name="&gt;&gt;Show.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="Stop.Text" xml:space="preserve">
-    <value>停</value>
+  <data name="Show.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 140</value>
+  </data>
+  <data name="&gt;&gt;rB4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="radioButton2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="Tip.Size" type="System.Drawing.Size, System.Drawing">
     <value>0, 30</value>
+  </data>
+  <data name="&gt;&gt;重要元素探索ToolStripMenuItem.Name" xml:space="preserve">
+    <value>重要元素探索ToolStripMenuItem</value>
   </data>
   <data name="Tip.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -360,6 +363,9 @@
   <data name="&gt;&gt;Send.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="imEl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 24</value>
+  </data>
   <data name="&gt;&gt;end.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
@@ -374,6 +380,9 @@
   </data>
   <data name="Tip.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
+  </data>
+  <data name="&gt;&gt;Anyli.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="&gt;&gt;查询工具ToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -393,11 +402,8 @@
   <data name="Send.Location" type="System.Drawing.Point, System.Drawing">
     <value>282, 246</value>
   </data>
-  <data name="&gt;&gt;chooseThemeToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;office2007ToolStripMenuItem.Name" xml:space="preserve">
-    <value>office2007ToolStripMenuItem</value>
+  <data name="begin.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
   </data>
   <data name="&gt;&gt;RST.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -408,8 +414,8 @@
   <data name="Stop.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 178</value>
   </data>
-  <data name="&gt;&gt;重要元素探索ToolStripMenuItem.Name" xml:space="preserve">
-    <value>重要元素探索ToolStripMenuItem</value>
+  <data name="RST.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
   </data>
   <data name="Wro.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 18</value>
@@ -417,17 +423,20 @@
   <data name="&gt;&gt;RST.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="&gt;&gt;重要元素探索ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;Send.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;重要元素探索ToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="toToolStripMenuItem.Text" xml:space="preserve">
+    <value>Tools</value>
   </data>
   <data name="&gt;&gt;timer1.Name" xml:space="preserve">
     <value>timer1</value>
   </data>
-  <data name="radioButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 22</value>
+  <data name="&gt;&gt;Anyli.Name" xml:space="preserve">
+    <value>Anyli</value>
   </data>
   <data name="STWC.Location" type="System.Drawing.Point, System.Drawing">
     <value>525, 45</value>
@@ -438,8 +447,8 @@
   <data name="&gt;&gt;Yes.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;imEl.Name" xml:space="preserve">
-    <value>imEl</value>
+  <data name="&gt;&gt;Wro.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="menuStrip1.Text" xml:space="preserve">
     <value>menuStrip1</value>
@@ -456,8 +465,8 @@
   <data name="&gt;&gt;begin.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="toToolStripMenuItem.Text" xml:space="preserve">
-    <value>Tools</value>
+  <data name="&gt;&gt;Wro.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -471,9 +480,6 @@
   <data name="Stop.Location" type="System.Drawing.Point, System.Drawing">
     <value>460, 246</value>
   </data>
-  <data name="RST.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
   <data name="Anyli.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -483,14 +489,8 @@
   <data name="&gt;&gt;Anyli.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="office2007ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 30</value>
-  </data>
   <data name="radioButton3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="Show.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 140</value>
   </data>
   <data name="&gt;&gt;Show.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -498,20 +498,20 @@
   <data name="Min.Text" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;end.Name" xml:space="preserve">
-    <value>end</value>
+  <data name="Show.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 40</value>
   </data>
   <data name="&gt;&gt;radioButton1.Name" xml:space="preserve">
     <value>radioButton1</value>
   </data>
-  <data name="&gt;&gt;Anyli.Name" xml:space="preserve">
-    <value>Anyli</value>
+  <data name="Anyli.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
   </data>
   <data name="&gt;&gt;toToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Anyli.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
   <data name="end.Size" type="System.Drawing.Size, System.Drawing">
     <value>98, 18</value>
@@ -528,17 +528,14 @@
   <data name="Entered.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun, 75pt</value>
   </data>
-  <data name="&gt;&gt;Anyli.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;Entered.ZOrder" xml:space="preserve">
+    <value>18</value>
   </data>
   <data name="Max.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 28</value>
   </data>
   <data name="&gt;&gt;Send.Name" xml:space="preserve">
     <value>Send</value>
-  </data>
-  <data name="&gt;&gt;Yes.ZOrder" xml:space="preserve">
-    <value>11</value>
   </data>
   <data name="&gt;&gt;DNA.Parent" xml:space="preserve">
     <value>$this</value>
@@ -558,9 +555,6 @@
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>766, 32</value>
   </data>
-  <data name="&gt;&gt;office2007ToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;Tip.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -573,8 +567,8 @@
   <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 28</value>
   </data>
-  <data name="imEl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 24</value>
+  <data name="begin.Text" xml:space="preserve">
+    <value>开始的元素</value>
   </data>
   <data name="Yes.Location" type="System.Drawing.Point, System.Drawing">
     <value>618, 105</value>
@@ -597,23 +591,14 @@
   <data name="&gt;&gt;STWC.Name" xml:space="preserve">
     <value>STWC</value>
   </data>
-  <data name="STWC.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="Max.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
-  </data>
-  <data name="radioButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>452, 162</value>
   </data>
   <data name="DNA.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 18</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Yes.Text" xml:space="preserve">
-    <value>正确：</value>
   </data>
   <data name="radioButton2.Text" xml:space="preserve">
     <value>根据序号写符号</value>
@@ -648,8 +633,8 @@
   <data name="&gt;&gt;DNA.Name" xml:space="preserve">
     <value>DNA</value>
   </data>
-  <data name="&gt;&gt;Show.Name" xml:space="preserve">
-    <value>Show</value>
+  <data name="&gt;&gt;Yes.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
   <data name="STWC.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun, 20pt</value>
@@ -663,9 +648,6 @@
   <data name="&gt;&gt;Max.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;Max.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="&gt;&gt;STWC.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -673,10 +655,7 @@
     <value>$this</value>
   </data>
   <data name="chooseThemeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 19</value>
-  </data>
-  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>12, 28</value>
   </data>
   <data name="radioButton2.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -684,11 +663,8 @@
   <data name="DNA.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;Wro.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Entered.ZOrder" xml:space="preserve">
-    <value>18</value>
+  <data name="&gt;&gt;chooseThemeToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Tip.Location" type="System.Drawing.Point, System.Drawing">
     <value>32, 182</value>
@@ -705,8 +681,8 @@
   <data name="&gt;&gt;Stop.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="查询工具ToolStripMenuItem.Text" xml:space="preserve">
-    <value>查询工具</value>
+  <data name="&gt;&gt;Max.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="radioButton1.Location" type="System.Drawing.Point, System.Drawing">
     <value>452, 134</value>
@@ -714,11 +690,11 @@
   <data name="end.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
-  <data name="&gt;&gt;aboutToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;end.Name" xml:space="preserve">
+    <value>end</value>
   </data>
-  <data name="begin.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
+  <data name="&gt;&gt;Show.Name" xml:space="preserve">
+    <value>Show</value>
   </data>
   <data name="Entered.Location" type="System.Drawing.Point, System.Drawing">
     <value>36, 246</value>
@@ -753,9 +729,6 @@
   <data name="&gt;&gt;imEl.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;aboutToolStripMenuItem1.Name" xml:space="preserve">
-    <value>aboutToolStripMenuItem1</value>
-  </data>
   <data name="&gt;&gt;aboutToolStripMenuItem.Name" xml:space="preserve">
     <value>aboutToolStripMenuItem</value>
   </data>
@@ -774,14 +747,11 @@
   <data name="重要元素探索ToolStripMenuItem.Text" xml:space="preserve">
     <value>重要元素探索</value>
   </data>
-  <data name="&gt;&gt;Wro.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="radioButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>452, 162</value>
   </data>
   <data name="&gt;&gt;timer1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nULLToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="imEl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -813,9 +783,6 @@
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>zh-Hans</value>
-  </metadata>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
@@ -824,5 +791,8 @@
   </metadata>
   <metadata name="skinEngine1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>281, 14</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>zh-Hans-HK</value>
   </metadata>
 </root>

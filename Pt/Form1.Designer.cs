@@ -47,11 +47,11 @@
             this.DNA = new System.Windows.Forms.Label();
             this.RST = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.chooseThemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.查询工具ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.重要元素探索ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.chooseThemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Anyli = new System.Windows.Forms.Label();
             this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine();
             this.begin = new System.Windows.Forms.Label();
@@ -169,6 +169,12 @@
             this.aboutToolStripMenuItem});
             this.menuStrip1.Name = "menuStrip1";
             // 
+            // chooseThemeToolStripMenuItem
+            // 
+            resources.ApplyResources(this.chooseThemeToolStripMenuItem, "chooseThemeToolStripMenuItem");
+            this.chooseThemeToolStripMenuItem.Name = "chooseThemeToolStripMenuItem";
+            this.chooseThemeToolStripMenuItem.Click += new System.EventHandler(this.chooseThemeToolStripMenuItem_Click);
+            // 
             // toToolStripMenuItem
             // 
             resources.ApplyResources(this.toToolStripMenuItem, "toToolStripMenuItem");
@@ -193,12 +199,6 @@
             resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
-            // 
-            // chooseThemeToolStripMenuItem
-            // 
-            resources.ApplyResources(this.chooseThemeToolStripMenuItem, "chooseThemeToolStripMenuItem");
-            this.chooseThemeToolStripMenuItem.Name = "chooseThemeToolStripMenuItem";
-            this.chooseThemeToolStripMenuItem.Click += new System.EventHandler(this.chooseThemeToolStripMenuItem_Click);
             // 
             // Anyli
             // 

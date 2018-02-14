@@ -156,6 +156,7 @@ namespace Pt2
 
         private void RST_Click(object sender, EventArgs e)
         {
+            StopTime();
             CompletelyRestart();
         }
         
