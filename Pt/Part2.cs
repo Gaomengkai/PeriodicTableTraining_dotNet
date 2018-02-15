@@ -14,8 +14,8 @@ namespace Pt2
         {
             //Refresh all the elements and to fill the Labels
             Entered.Text = null;
-            if (Min.Text == "") { Min.Text = "1"; }
-            if (Max.Text == "") { Max.Text = "36"; }
+            if (Min.Text == "" || Convert.ToInt32(Min.Text) >= 120) { Min.Text = "1"; }
+            if (Max.Text == "" || Convert.ToInt32(Max.Text) >= 120) { Max.Text = "36"; }
             int min = Convert.ToInt32(Min.Text);    //Dafault is 1
             int max = Convert.ToInt32(Max.Text);    //Dafault is 36
             if (max < min)
@@ -65,12 +65,19 @@ namespace Pt2
                 Tip.Text = "请回答问题!答案：" + Libraries.numToSign[rd];
                 DNA.Text = dd + Convert.ToString(d);
             }
-            else
+            else if(choice == 1 || choice == 3)
             {
                 //The user is expected to input numbers but they didn't
                 d++;
                 Tip.ForeColor = Color.Orange;
                 Tip.Text = "请回答问题!答案：" + Convert.ToString(rd);
+                DNA.Text = dd + Convert.ToString(d);
+            }
+            else if(choice == 4)
+            {
+                d++;
+                Tip.ForeColor = Color.Orange;
+                Tip.Text = "请回答问题!答案：" + Libraries.numToZ[rd];
                 DNA.Text = dd + Convert.ToString(d);
             }
             Refresh0();         //Refresh it!
@@ -150,6 +157,7 @@ namespace Pt2
             DNA.Text = dd;
             NewMethod12();
             ResetTime();
+            isFirst = true;
         }
 
         private void JUDGE_ALL(bool isYes)

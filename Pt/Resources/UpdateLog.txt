@@ -1,3 +1,7 @@
+>>>2018/2/15 Beta2
+[FIX] infinite bugs;
+
+
 >>>2018/2/14 20:48:55 Beta1
 [ADD] Update Model is added!
 [HAPPY NEW YEAR]

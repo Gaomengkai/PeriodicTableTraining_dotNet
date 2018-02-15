@@ -57,8 +57,8 @@ namespace Pt2
             isFirst = true;
             Refresh0();
         }
-        
-       
+
+
         #region RadioButton_CHECK
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -99,36 +99,54 @@ namespace Pt2
             }
             //Send the content which the user inputed to our program
             String s = Entered.Text;        //We need the type of String
-            if (s != "")                    //Judge whether the user has inputed data or not
+            bool fuckIsFirst = false;
+            try
             {
-                if (s[0] < 'A' && (choice == 1 || choice == 3))
+                if (s != "")                    //Judge whether the user has inputed data or not
                 {
-                    JUDGE_ALL(isYes: Convert.ToInt32(s) == rd);
+                    if (s[0] < 'A' && (choice == 1 || choice == 3))
+                    {
+                        JUDGE_ALL(isYes: Convert.ToInt32(s) == rd);
+                    }
+                    else if (choice == 2)
+                    {
+                        JUDGE_ALL(isYes: s == Libraries.numToSign[rd]);//The user inputed a type of String
+                    }
+                    else if (choice == 4)
+                    {
+                        JUDGE_ALL(isYes: Math.Abs(Convert.ToDouble(s) - Libraries.numToZ[rd]) < 0.4);
+                    }
                 }
-                else if (choice == 2)
+                else
                 {
-                    JUDGE_ALL(isYes: s == Libraries.numToSign[rd]);//The user inputed a type of String
+                    DidNotAnswer();                 //The user did not input anything
+                    fuckIsFirst = true;
                 }
-                else if (choice == 4)
-                {
-                    JUDGE_ALL(isYes: Math.Abs(Convert.ToDouble(s) - Libraries.numToZ[rd]) < 0.4);
-                }
+            }
+            catch (FormatException)
+            {
+                JUDGE_ALL(false);
+                fuckIsFirst = true;
+            }
+            finally
+            {
+                Last = ReadTime();                  //Let's get the time when the user inputed data
+                a = (double)r * 100 / (r + w);
+                Anyli.Text = aa + a.ToString("0.00") + "%";
+
+            }
+            if (Last.Equals(empty) || (fuckIsFirst && isFirst))
+            {
+                isFirst = true;                 //But this time stwc hasn't begun working!
+                return;
             }
             else
             {
-                DidNotAnswer();                 //The user did not input anything
-            }
-            isFirst = false;                    //The user lost the FIRST //Hahahahahaha
-            Last = ReadTime();                  //Let's get the time when the user inputed data
-            a = (double)r * 100 / (r + w);
-            Anyli.Text = aa + a.ToString("0.00") + "%";
-
-            if (Last.Equals(empty))
-            {
-                isFirst = true;                 //But this time stwc hasn't begun working!
+                isFirst = false;
+                return;
             }
         }
-        
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             //The event of REFRESH and REFRESH
@@ -159,7 +177,7 @@ namespace Pt2
             StopTime();
             CompletelyRestart();
         }
-        
+
 
         private void 重要元素探索ToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -176,6 +194,12 @@ namespace Pt2
         {
             About openq = new About();
             openq.Show();
+        }
+
+        private void 查询工具ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Tool1 tool = new Tool1();
+            tool.Show();
         }
 
         private void Min_TextChanged(object sender, EventArgs e)

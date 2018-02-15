@@ -187,6 +187,7 @@
             // 
             resources.ApplyResources(this.查询工具ToolStripMenuItem, "查询工具ToolStripMenuItem");
             this.查询工具ToolStripMenuItem.Name = "查询工具ToolStripMenuItem";
+            this.查询工具ToolStripMenuItem.Click += new System.EventHandler(this.查询工具ToolStripMenuItem_Click);
             // 
             // 重要元素探索ToolStripMenuItem
             // 
