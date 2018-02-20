@@ -118,7 +118,6 @@ namespace Pt2
                     {
                         int i;
                         for (i = 1; i <= 121 && Libraries.numToSign[i] != t2; i++) ;
-                        i--;
                         t1 = Convert.ToString(i);
                         t3 = Libraries.numToName[i];
                         t4 = Convert.ToString(Libraries.numToZ[i]);
@@ -147,7 +146,7 @@ namespace Pt2
         {
             if (UserIsBeingFucked == 3 || UserIsBeingFucked == 0)
             {
-                t3 = textBox2.Text;
+                t3 = textBox3.Text;
                 if (t3 != "")
                 {
                     UserIsBeingFucked = 3;
@@ -156,7 +155,6 @@ namespace Pt2
                     {
                         int i;
                         for (i = 1; i <= 121 && Libraries.numToName[i] != t3; i++) ;
-                        i--;
                         t1 = Convert.ToString(i);
                         t2 = Libraries.numToSign[i];
                         t4 = Convert.ToString(Libraries.numToZ[i]);

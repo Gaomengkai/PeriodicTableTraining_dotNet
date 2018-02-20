@@ -42,7 +42,7 @@ namespace Pt2
 
         private void btCheckUpdate_Click(object sender, EventArgs e)
         {
-            CheckUpdate checkUpdate = new CheckUpdate(Libraries._version);
+            CheckUpdate checkUpdate = new CheckUpdate(Libraries._version,1);
             if (checkUpdate.StartCheckNewVersion()){
                 if (checkUpdate.HasNewVersion())
                 {

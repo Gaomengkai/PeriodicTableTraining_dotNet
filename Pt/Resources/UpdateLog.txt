@@ -1,6 +1,9 @@
+>>>2018/2/20 Beta3
+[FIX] some bugs;
+[ADD] auto checkUpdate
+
 >>>2018/2/15 Beta2
 [FIX] infinite bugs;
-
 
 >>>2018/2/14 20:48:55 Beta1
 [ADD] Update Model is added!

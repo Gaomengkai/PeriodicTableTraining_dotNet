@@ -8,8 +8,8 @@ namespace Pt2
 {
     public static class Libraries
     {
-        public static String _version = "Beta2";
-        public static String _comdate = "2018年2月15日";
+        public static String _version = "Beta3";
+        public static String _comdate = "2018年2月20日";
         #region normal elements
         public static String[] numToSign = {
             "000",

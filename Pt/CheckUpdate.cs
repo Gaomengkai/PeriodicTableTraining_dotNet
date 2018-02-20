@@ -15,6 +15,7 @@ namespace Pt2
         private static string s_localTag;
         private static string s_lastTag;
         private static string s_body;
+        private static int s_mode;
 
         public static String GetC(String url)
         {
@@ -36,10 +37,13 @@ namespace Pt2
                 myStreamReader.Close();
                 fuckedStream.Close();
             }
-            catch(WebException e)
+            catch (WebException e)
             {
-                System.Windows.Forms.MessageBox.Show(e.ToString() + "\n\n网络错误");
-                retString = "-1";
+                if (Mode == 1)
+                {
+                    System.Windows.Forms.MessageBox.Show(e.ToString() + "\n\n网络错误");
+                }
+                    retString = "-1";
             }
             return retString;
         }
@@ -48,6 +52,8 @@ namespace Pt2
         public static String LocalTag { get => s_localTag; set => s_localTag = value; }
         public static String DownUrl { get => s_downUrl; set => s_downUrl = value; }
         public static String Body { get => s_body; set => s_body = value; }
+        public static int Mode { get => s_mode; set => s_mode = value; }
+
 
         public class FirstJson
         {
@@ -75,7 +81,11 @@ namespace Pt2
         }
 
 
-        public CheckUpdate(String Tag) => LocalTag = Tag;
+        public CheckUpdate(String Tag, int mode)
+        {
+            LocalTag = Tag;
+            Mode = mode;
+        }
 
         public bool HasNewVersion() => LocalTag != LastTag;
 
